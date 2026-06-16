@@ -11,6 +11,9 @@ import { Gallery } from './components/Gallery';
 import { LoveStory } from './components/LoveStory';
 import { GiftSection } from './components/GiftSection';
 import { Wishes } from './components/Wishes';
+import { VideoGallery } from './components/VideoGallery';
+import { LiveStreaming } from './components/LiveStreaming';
+import { InstagramFilter } from './components/InstagramFilter';
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -120,7 +123,7 @@ function App() {
 
           {/* Bride & Groom Profiles */}
           <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery1.png')` }} />
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery1.webp')` }} />
             <div className="relative z-10">
               <Profiles />
             </div>
@@ -128,7 +131,7 @@ function App() {
 
           {/* Countdown & Calendar */}
           <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery2.png')` }} />
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery2.webp')` }} />
             <div className="relative z-10">
               <CountdownCalendar />
             </div>
@@ -136,7 +139,7 @@ function App() {
 
           {/* Event Matrimony & Reception Details */}
           <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery3.png')` }} />
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery3.webp')` }} />
             <div className="relative z-10">
               <Events />
             </div>
@@ -144,39 +147,63 @@ function App() {
 
           {/* Time rundown */}
           <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery4.png')` }} />
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery4.webp')` }} />
             <div className="relative z-10">
               <Timeline />
             </div>
           </div>
 
-          {/* Couple love story */}
-          <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery1.png')` }} />
-            <div className="relative z-10">
-              <LoveStory />
-            </div>
-          </div>
-
           {/* Photo Gallery Grid */}
           <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery2.png')` }} />
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery2.webp')` }} />
             <div className="relative z-10">
               <Gallery />
             </div>
           </div>
 
+          {/* Video Gallery */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery3.webp')` }} />
+            <div className="relative z-10">
+              <VideoGallery />
+            </div>
+          </div>
+
+          {/* Live Streaming */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery1.webp')` }} />
+            <div className="relative z-10">
+              <LiveStreaming />
+            </div>
+          </div>
+
+          {/* Couple love story */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery1.webp')` }} />
+            <div className="relative z-10">
+              <LoveStory />
+            </div>
+          </div>
+
           {/* Gift Envelope bank details */}
           <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery3.png')` }} />
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery3.webp')` }} />
             <div className="relative z-10">
               <GiftSection />
             </div>
           </div>
 
+          {/* Instagram Filter */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery2.webp')` }} />
+            <div className="relative z-10">
+              <InstagramFilter />
+            </div>
+          </div>
+
           {/* Wishes board & RSVP */}
           <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery4.png')` }} />
+            <div className="absolute inset-0 bg-cover bg-center opacity-[0.05] pointer-events-none" style={{ backgroundImage: `url('/src/assets/gallery4.webp')` }} />
             <div className="relative z-10">
               <Wishes />
             </div>

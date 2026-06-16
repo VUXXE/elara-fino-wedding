@@ -3,10 +3,12 @@ import { X, ZoomIn } from 'lucide-react';
 
 export const Gallery: React.FC = () => {
   const images = [
-    { src: '/src/assets/gallery1.png', alt: 'Moment 1' },
-    { src: '/src/assets/gallery2.png', alt: 'Moment 2' },
-    { src: '/src/assets/gallery3.png', alt: 'Moment 3' },
-    { src: '/src/assets/gallery4.png', alt: 'Moment 4' }
+    { src: '/src/assets/gallery1.webp', alt: 'Moment 1' },
+    { src: '/src/assets/gallery2.webp', alt: 'Moment 2' },
+    { src: '/src/assets/gallery3.webp', alt: 'Moment 3' },
+    { src: '/src/assets/gallery4.webp', alt: 'Moment 4' },
+    { src: '/src/assets/gallery5.webp', alt: 'Moment 5' },
+    { src: '/src/assets/gallery6.webp', alt: 'Moment 6' }
   ];
 
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -30,7 +32,7 @@ export const Gallery: React.FC = () => {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-2 gap-4 max-w-4xl w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl w-full">
         {images.map((img, index) => (
           <div 
             key={index} 
