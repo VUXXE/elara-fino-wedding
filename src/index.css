@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;      /* warm cream #fcfbf9 */
+    --foreground: 160 5% 13%;      /* charcoal #1f2421 */
+
+    --card: 40 20% 98%;
+    --card-foreground: 160 5% 13%;
+
+    --popover: 40 20% 98%;
+    --popover-foreground: 160 5% 13%;
+
+    --primary: 153 41% 14%;        /* forest green #0d2b1d */
+    --primary-foreground: 40 20% 98%;
+
+    --secondary: 32 41% 63%;       /* gold #c5a47e */
+    --secondary-foreground: 153 41% 14%;
+
+    --muted: 153 10% 90%;
+    --muted-foreground: 153 10% 50%;
+
+    --accent: 32 41% 63%;
+    --accent-foreground: 40 20% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 32 20% 88%;
+    --input: 32 20% 88%;
+    --ring: 153 41% 14%;
+
+    --radius: 0.5rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fcfbf9;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a47e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0d2b1d;
+}
+
+/* Luxury visual accents */
+.luxury-gold-border {
+  border-image: linear-gradient(to bottom, #dfcfbe, #c5a47e, #dfcfbe) 1;
+}
+
+/* Page animations */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+
+/* Custom class for rotating vinyl */
+@keyframes spin-vinyl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate-vinyl {
+  animation: spin-vinyl 10s linear infinite;
+}
+
+/* Soft transition fallback for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom smooth floating animation for music notes */
+@keyframes float-up {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-24px) scale(1.1);
+    opacity: 0;
+  }
+}
+.animate-float-note-1 {
+  animation: float-up 2.5s ease-in-out infinite;
+}
+.animate-float-note-2 {
+  animation: float-up 2.5s ease-in-out infinite;
+  animation-delay: 1.25s;
+}
+
